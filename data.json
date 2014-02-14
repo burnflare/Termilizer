@@ -18,7 +18,7 @@
         "type": "text"
     },
     "pwd": {
-        "text": "/etc/sudoes/make/me/sandwich",
+        "text": "/etc/sudoers/make/me/sandwich",
         "type": "text"
     },
     "reload": {

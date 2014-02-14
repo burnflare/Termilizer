@@ -1,7 +1,7 @@
  function submitForm()
  {
 	 var input = $("#input").val();
-	 lastCommand = input;
+	 undoStack.push(input);
 	 $("#termilizer").append("&gt;&nbsp;"+input+"<br/>");
 	 
 	 $("input").val("");

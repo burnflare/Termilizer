@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <HEAD>
 <TITLE>Vishnu's Shell</TITLE>
+<meta name = "viewport" content = "width = 320,
+       initial-scale = 2.3, user-scalable = no">
 <LINK REL=stylesheet HREF="style.css" TYPE="text/css">
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="js.js"></script>
+<script src="main.js"></script>
 </HEAD>
 <BODY BGCOLOR="#000000" TEXT="#CCCCCC" LINK="#FFFFFF" ALINK="#FFFFFF" VLINK="#CCCCCC">
 <p class="top"> Welcome to Vishnu's homepage.<br/><br /> Type <span class=bt>help</span> at any time if you're lost</p>
@@ -16,7 +18,7 @@
   document.prompt.inputPrompt.focus();
  -->
  var url;
- var lastCommand;
+ var undoStack = [];
  var canContinueTimer = false;
  $('#form').submit(function () {
 	 submitForm();
@@ -30,13 +32,8 @@
 
  $("#input").keydown(function(e) {
 	 if(e.which==38) {
-		 $("input").val(lastCommand);
-	 } 
-	 // else if(canContinueTimer==true) {
-	 // 	canContinueTimer=false;
-	 // 		append("");
-	 // 		$("input").val("");
-	 // }
+		 $("input").val(undoStack.pop());
+	 }
  }); 
 </script>
 </body>
