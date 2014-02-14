@@ -1,23 +1,3 @@
- document.prompt.inputPrompt.focus();
- var url;
- var undoStack = [];
- var canContinueTimer = false;
-
- $('#form').submit(function () {
-	 submitForm();
-	 return false;
- });
-
- //Adding triger for undo stack; key 38 is the up arrow key
- $("#input").keydown(function(e) {
-	 if(e.which==38) {
-		 $("input").val(undoStack.pop());
-	 }
- }); 
-
- //Prefetching json file
- $.ajax({type: "GET",url: "data.json"});
-
  function submitForm()
  {
 	 var input = $("#input").val();
