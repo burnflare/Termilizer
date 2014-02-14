@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<HEAD>
-<TITLE>Vishnu's Shell</TITLE>
+<head>
+<title>Vishnu's Shell</title>
 <meta name = "viewport" content = "width = 320,
        initial-scale = 2.3, user-scalable = no">
 <LINK REL=stylesheet HREF="style.css" TYPE="text/css">
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+</head>
+
+<body BGCOLOR="#000000" TEXT="#CCCCCC" LINK="#FFFFFF" ALINK="#FFFFFF" VLINK="#CCCCCC">
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="main.js"></script>
-</HEAD>
-<BODY BGCOLOR="#000000" TEXT="#CCCCCC" LINK="#FFFFFF" ALINK="#FFFFFF" VLINK="#CCCCCC">
+
 <p class="top"> Welcome to Vishnu's homepage.<br/><br /> Type <span class=bt>help</span> at any time if you're lost</p>
 <p class="termilizer" id="termilizer"></p>
 <form id="form" name="prompt">&gt;&nbsp;<input id="input" type="text" size="64" name="inputPrompt" class="prompt" spellcheck="false"></form>
 
-<script language="javascript">
-<!--
-  document.prompt.inputPrompt.focus();
- -->
- var url;
- var undoStack = [];
- var canContinueTimer = false;
- $('#form').submit(function () {
-	 submitForm();
-	 return false;
- });
-
- $("#input").keydown(function(e) {
-	 if(e.which==38) {
-		 $("input").val(undoStack.pop());
-	 }
- }); 
-
-//Prefetching json file
- $.ajax({type: "GET",url: "data.json"});
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src='//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
+
 </body>
 </html>

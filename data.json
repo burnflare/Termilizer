@@ -9,12 +9,17 @@
         "type": "url",
         "url": "http://facebook.com/"
     },
+    "github": {
+        "text": "Getting you to Vishnu's Github page...(Input `c` to cancel)<br/>",
+        "type": "url",
+        "url": "http://github.com/burnflare"
+    },
     "help": {
         "text": "<bt>whois<br>pwd<br>ls<br>contact<br>portfolio<br>github<br>twitter<br>facebook</bt>",
         "type": "text"
     },
     "ls": {
-        "text": "<high>Extensive experience in:</high><br/>Objective-C<br/>PHP<br/>Java<br/>Git<br/>MySQL<br/><high>Familiar with:</high><br/>C++<br/>Javascript<br/>HTML<br/>CSS<br/>PostgreSQL",
+        "text": "<high>Experience in:</high><br/>Objective-C<br/>PHP<br/>Java<br/>Git<br/>MySQL<br/><high>Familiar with:</high><br/>C++<br/>Javascript<br/>HTML<br/>CSS<br/>PostgreSQL",
         "type": "text"
     },
     "pwd": {
@@ -24,11 +29,6 @@
     "reload": {
         "text": "Welcome to Vishnu's site.<br/><br /> Type <bt>help</bt> at any time if you're lost",
         "type": "text"
-    },
-    "resume": {
-        "text": "Showing your my resume...(Input `c` to cancel)<br/>",
-        "type": "url",
-        "url": "files/resume.pdf"
     },
     "tweet": {
         "text": "Send Vishnu a tweet!Input `c` to cancel)<br/>",
