@@ -18,6 +18,7 @@
  	$("#termilizer").append(text+"<br/>");
 	$('bt').wrap("<span class=bt></span>");
 	$('high').wrap("<span class=highlight></span>");
+	window.scrollTo(0,document.body.scrollHeight);
  }
  function startTimer(i, url){
 	 if(i>0)
