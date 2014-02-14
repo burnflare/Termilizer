@@ -1,12 +1,12 @@
 input.prompt { background-color: #000000; color: #ffffff; border: 0px; 
-               font-size: 12pt;
+               font-size: 16pt;
                text-decoration: none;
                font-family: 'Source Code Pro', sans-serif;
 			   outline: none;
 		   	   outline-width: 0; }
 
 p.termilizer, p.top{ background-color: #000000; color: #cccccc; border: 0px;    
-               font-size: 12pt;
+               font-size: 16pt;
                text-decoration: none;
                font-family: 'Source Code Pro', sans-serif; }
 
