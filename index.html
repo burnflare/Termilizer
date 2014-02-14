@@ -24,17 +24,15 @@
 	 submitForm();
 	 return false;
  });
- 
- var ev = jQuery.Event("keypress");
- ev.ctrlKey = false;
- ev.which = 38;
- $("container").trigger(ev);
 
  $("#input").keydown(function(e) {
 	 if(e.which==38) {
 		 $("input").val(undoStack.pop());
 	 }
  }); 
+
+//Prefetching json file
+ $.ajax({type: "GET",url: "data.json"});
 </script>
 </body>
 </html>
